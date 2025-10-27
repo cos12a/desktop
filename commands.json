@@ -1,0 +1,67 @@
+[
+  {
+    "group": "MQTT",
+    "commands": [
+      { "cmd": "sub", "desc": "mqtt订阅" },
+      { "cmd": "unsub", "desc": "mqtt取消订阅" },
+      { "cmd": "mqttout", "desc": "SetMQTT log OUT" },
+      { "cmd": "bleout", "desc": "SetBLE log OUT" }
+    ]
+  },
+  {
+    "group": "系统",
+    "commands": [
+      { "cmd": "reboot", "desc": "重启系统" },
+      { "cmd": "info", "desc": "系统信息" },
+      { "cmd": "ssid", "desc": "获取 SSID" },
+      { "cmd": "web", "desc": "获取配网状态" },
+      { "cmd": "rssi", "desc": "信号强度" },
+      { "cmd": "del_net", "desc": "删除配网信息" },
+      { "cmd": "del_all", "desc": "删除所有数据" },
+      { "cmd": "del_usinfo", "desc": "删除 Usinfo 数据" }
+    ]
+  },
+  {
+    "group": "OTA",
+    "commands": [
+      { "cmd": "ota eps<ver>[url]", "desc": "OTA EPS 升级" },
+      { "cmd": "ota orbit<1|2>[data]", "desc": "OTA Orbit 模式切换" },
+      { "cmd": "ota help", "desc": "OTA 帮助" }
+    ]
+  },
+  {
+    "group": "NVS",
+    "commands": [
+      { "cmd": "nvs help", "desc": "显示帮助信息" },
+      { "cmd": "nvs list", "desc": "列出所有字段" },
+      { "cmd": "nvs get <key>", "desc": "获取指定字段的值" },
+      { "cmd": "nvs set <key> <value>", "desc": "设置指定字段的值" },
+      { "cmd": "nvs list_avd <part> <name> <type>", "desc": "按分区/命名空间/类型列出字段" }
+    ]
+  },
+  {
+    "group": "文件系统",
+    "commands": [
+      { "cmd": "mount <partition>", "desc": "挂载分区" },
+      { "cmd": "unmount", "desc": "卸载分区" },
+      { "cmd": "create <filename>", "desc": "创建文件" },
+      { "cmd": "write <filename> <content>", "desc": "写入文件内容" },
+      { "cmd": "append <filename> <content>", "desc": "追加内容" },
+      { "cmd": "read <filename>", "desc": "读取文件" },
+      { "cmd": "del <filename>", "desc": "删除文件" },
+      { "cmd": "list [dir]", "desc": "列出文件" },
+      { "cmd": "tree [dir]", "desc": "目录树" },
+      { "cmd": "df", "desc": "显示磁盘使用情况" }
+    ]
+  },
+  {
+    "group": "通用",
+    "commands": [
+      { "cmd": "help", "desc": "显示所有命令帮助" },
+      { "cmd": "fs", "desc": "文件系统相关命令" },
+      { "cmd": "nvs", "desc": "NVS 相关命令" },
+      { "cmd": "ota", "desc": "OTA 相关命令" },
+      { "cmd": "sys", "desc": "系统相关命令" }
+    ]
+  }
+]
